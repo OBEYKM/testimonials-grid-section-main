@@ -1,0 +1,143 @@
+
+body{
+    
+
+    /* primary colors  */
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Moderate-violet-opacity: hsl(263, 36%, 59%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    /* neutral color */
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+    margin: 0;
+    padding:7%;
+    /* padding-top:5%; */
+    background-color: var(--Light-grayish-blue);
+    
+
+    font-family: 'Barlow Semi Condensed';
+}
+
+.content{
+    text-align: left;
+    width:100%;
+    /* font-size: 16px; */
+    /* justify-items: end; */
+    /* font-size: px; */
+}
+
+.content  p{
+    margin-bottom: 0;
+    opacity: 70%;
+    /* justify-items: end; */
+   /* height: 50%;  */
+}
+
+.title{
+    font-weight:500px;
+    font-size:medium;
+    text-align: left;
+    /* margin-top: 0; */
+    /* width: 99%; */
+}
+
+.title > p{
+    margin-top: 0;
+}
+
+.head{
+    display: grid;
+    gap:.5rem;
+    grid-template-columns: 1fr 12fr;
+}
+
+.testimonials{
+
+    display: grid;
+    gap :1.3rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(2,1fr);
+    font-size: 13px;
+    padding-bottom: 1rem;
+}
+
+.card{
+    padding:0.7rem;
+}
+
+.head img {
+    border-radius: 100%;
+    width:35px;
+
+    /* border: solid var(--Light-gray); */
+}
+
+.testimonials .card{
+    /* border: solid; */
+    border-radius:2.4%;
+}
+
+.testimonials .card:first-child{ 
+    
+    grid-column: span 2;
+    background-color: var(--Moderate-violet);
+    color:var(--White);
+}
+
+.testimonials .card:first-child .head img{ 
+    border: solid var(--Moderate-violet-opacity);
+}
+
+.testimonials .card:nth-child(4) .head img{ 
+    border: solid var(--Moderate-violet-opacity);
+}
+
+.testimonials .card  .head p:first-child{    
+    margin:0 0 0 0;
+}
+
+.testimonials .card .head p:nth-child(2){    
+    margin-top:.1rem;
+}
+
+.testimonials .card:last-child{
+    grid-column-start:4;
+    grid-row: 1 / -1;
+}
+
+.testimonials .card:nth-child(4){
+    grid-column: span 2;
+}
+
+.user-info p:last-child{
+    opacity:50%;
+}
+
+
+.card:nth-child(2){
+    /* width: 70%; */
+    background-color:var(--Very-dark-grayish-blue);
+    color:var(--White);
+}
+
+.card:nth-child(4){
+    background-color:var(--Very-dark-blackish-blue);
+    color:var(--White);
+}
+
+.card:nth-child(3){
+    background-color:var(--White);
+    color:var(--Very-dark-blackish-blue);
+    font-size: 16px;
+}
+
+.card:nth-child(5){
+    background-color:var(--White);
+    color:var(--Very-dark-blackish-blue);
+    font-size: 16px;
+}
+
+

@@ -1,0 +1,15 @@
+@media (max-width:1140px) {
+
+    body{
+        /* background-color: red; */
+    }
+
+    .testimonials{
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        padding-bottom: 1rem;
+    }
+    
+}
